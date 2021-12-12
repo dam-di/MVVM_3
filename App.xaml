@@ -14,7 +14,15 @@
             <DataTemplate DataType="{x:Type viewmodels:ResumenViewModel}">
                 <views:ResumenView/>
             </DataTemplate>
+
+
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/Dictionaries/MyDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
+        
+        
         
     </Application.Resources>
 </Application>

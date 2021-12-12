@@ -20,6 +20,10 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+
+        <Grid.Resources>
+            <Style TargetType="Button" BasedOn="{StaticResource botones}"/>
+        </Grid.Resources>
         
         <!--PANTALLA-->
         <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
@@ -27,118 +31,85 @@
                      FontWeight="Black" VerticalContentAlignment="Center" 
                      TextAlignment="Right" Background="LightGreen" />
 
-        <Button Grid.Column="0" Grid.Row="1" Margin="10" Background="DarkGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
+        <Button Grid.Column="0" Grid.Row="1"
                 Content="7"
                 Command="{Binding NumerosCommand}"
-                CommandParameter="7"
-                Foreground="White" />
+                CommandParameter="7" />
 
-        <Button Grid.Column="1" Grid.Row="1" Margin="10" Background="DarkGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
+        <Button Grid.Column="1" Grid.Row="1" 
                 Content="8"
                 Command="{Binding NumerosCommand}"
-                CommandParameter="8"
-                Foreground="White" />
+                CommandParameter="8" />
 
-        <Button Grid.Column="2" Grid.Row="1" Margin="10" Background="DarkGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
+        <Button Grid.Column="2" Grid.Row="1" Margin="10"
                 Content="9"
                 Command="{Binding NumerosCommand}"
-                CommandParameter="9"
-                Foreground="White" />
+                CommandParameter="9"/>
 
-        <Button Grid.Column="3" Grid.Row="1" Margin="10" Background="LightGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
-                Content="/"
+        <Button Grid.Column="3" Grid.Row="1"
+                Content="/" Background="LightGray"
                 Command="{Binding FuncionesCommand}"
-                CommandParameter="/"
-                Foreground="White" />
+                CommandParameter="/" />
 
         
-        <Button Grid.Column="0" Grid.Row="2" Margin="10" Background="DarkGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
-                Content="4"
+        <Button Grid.Column="0" Grid.Row="2" Content="4"
                 Command="{Binding NumerosCommand}"
-                CommandParameter="4"
-                Foreground="White" />
+                CommandParameter="4"/>
 
-        <Button Grid.Column="1" Grid.Row="2" Margin="10" Background="DarkGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
+        <Button Grid.Column="1" Grid.Row="2" Margin="10" 
                 Content="5"
                 Command="{Binding NumerosCommand}"
-                CommandParameter="5"
-                Foreground="White" />
+                CommandParameter="5"/>
 
-        <Button Grid.Column="2" Grid.Row="2" Margin="10" Background="DarkGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
+        <Button Grid.Column="2" Grid.Row="2" Margin="10"
                 Content="6"
                 Command="{Binding NumerosCommand}"
-                CommandParameter="6"
-                Foreground="White" />
+                CommandParameter="6"/>
 
-        <Button Grid.Column="3" Grid.Row="2" Margin="10" Background="LightGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
-                Content="x"
+        <Button Grid.Column="3" Grid.Row="2" Content="x"
+                Background="LightGray"
                 Command="{Binding FuncionesCommand}"
-                CommandParameter="*"
-                Foreground="White" />
+                CommandParameter="*"/>
 
-        <Button Grid.Column="0" Grid.Row="3" Margin="10" Background="DarkGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
-                Content="3"
-                Command="{Binding NumerosCommand}"
-                CommandParameter="3"
-                Foreground="White" />
-
-        <Button Grid.Column="1" Grid.Row="3" Margin="10" Background="DarkGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
-                Content="2"
-                Command="{Binding NumerosCommand}"
-                CommandParameter="2"
-                Foreground="White" />
-
-        <Button Grid.Column="2" Grid.Row="3" Margin="10" Background="DarkGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
-                Content="1" 
-                Foreground="White" 
+        <Button Grid.Column="0" Grid.Row="3"
+                Content="1"
                 Command="{Binding NumerosCommand}"
                 CommandParameter="1"/>
 
+        <Button Grid.Column="1" Grid.Row="3" Margin="10" 
+                Content="2"
+                Command="{Binding NumerosCommand}"
+                CommandParameter="2"/>
+
+        <Button Grid.Column="2" Grid.Row="3" Margin="10" 
+                Content="3" 
+                Command="{Binding NumerosCommand}"
+                CommandParameter="3"/>
+
         <Button Grid.Column="3" Grid.Row="3" Margin="10" Background="LightGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
                 Content="-"
                 Command="{Binding FuncionesCommand}"
-                CommandParameter="-"
-                Foreground="White" />
+                CommandParameter="-"/>
 
-        <Button Grid.Column="0" Grid.Row="4" Margin="10" Background="DarkGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
+        <Button Grid.Column="0" Grid.Row="4"
                 Content="0"
                 Command="{Binding NumerosCommand}"
-                CommandParameter="0"
-                Foreground="White" />
+                CommandParameter="0"/>
 
         <Button Grid.Column="1" Grid.Row="4" Margin="10" Background="LightGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
                 Content="."
                 Command="{Binding NumerosCommand}"
-                CommandParameter=","
-                Foreground="White" />
+                CommandParameter="," />
 
         <Button Grid.Column="2" Grid.Row="4" Margin="10" Background="LightGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
                 Content="="
                 Command="{Binding FuncionesCommand}"
-                CommandParameter="="
-                Foreground="White" />
+                CommandParameter="=" />
 
         <Button Grid.Column="3" Grid.Row="4" Margin="10" Background="LightGray"
-                FontSize="50"  FontWeight="SemiBold" VerticalContentAlignment="Center" 
                 Content="+"
                 Command="{Binding FuncionesCommand}"
-                CommandParameter="+"
-                Foreground="White" />
+                CommandParameter="+"/>
 
 
     </Grid>
